@@ -387,6 +387,7 @@ button:focus {
 #mu-about {
 	background-color: #fff;
 	display: inline;
+	box-sizing: border-box	;
 	float: left;
 	width: 100%;
 }
@@ -719,17 +720,45 @@ button:focus {
 /* PRICING */
 /*--------------------*/
 
-
-#mu-pricing {
+/* .price-it {
+	height: 100vh;
+	overflow: auto;
+	width: 100vw;
 	background:url(./assets/images/bg3.jpg);
 	background-size:cover;
-	background-attachment:fixed;
+	background-attachment: fixed;
 	background-repeat:no-repeat;
+} */
+
+#mu-pricing {
+	/* background:url(./assets/images/bg3.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat; */
 	color:#fff;
 	display: inline;
 	float: left;
 	width: 100%;
 }
+
+#mu-pricing:before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url(./assets/images/bg3.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+
+
+
 .mu-pricing-area .mu-title-area  h1{ color:#ff1493; font-size:52px;}
 .mu-pricing-area .mu-title-area p{font-size:20px;}
 .mu-pricing-area {
@@ -1435,7 +1464,7 @@ button:focus {
 @media (max-width: 767px) {
 
 	.mu-logo img {
-		width: 150px;
+		width: auto;
 	}
 
 	
@@ -1493,7 +1522,9 @@ button:focus {
 	.mu-contact-content {
 		padding: 0 10%;
 	}
-				
+	.spc{
+		margin-top: 30px;
+	}		
 
 }
 
@@ -1627,7 +1658,7 @@ button:focus {
 @media (max-width: 360px) {
 
 	.mu-logo img {
-		width: 120px;
+		width: auto;
 	}
 
 	.mu-hero-featured-area {
