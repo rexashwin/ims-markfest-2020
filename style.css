@@ -964,7 +964,10 @@ button:focus {
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
-
+.all-img{
+	width: 500px;
+	height: 350px;
+}
 
 /*--------------------*/
 /* SPONSORS */
@@ -1489,7 +1492,6 @@ button:focus {
 
 
 @media (max-width: 640px){
-	
 	.mu-event-counter-block {
 		height: 100px;
 		width: 100px;
@@ -1533,6 +1535,10 @@ button:focus {
 
 	body {
 		font-size: 14px;
+	}
+	.all-img{
+		width: 500px;
+		height: 230px;
 	}
 
 	.mu-logo {
