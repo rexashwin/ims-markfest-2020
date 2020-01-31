@@ -1302,6 +1302,34 @@ button:focus {
 	padding: 10px;
 }
 
+/* Modal Section */
+
+.modal {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	transform-origin: top;
+	transform: scale(1, 0);
+	transition: 400ms;
+	background: #00000069;
+	justify-content: center;
+	align-items: center;
+	z-index: 19999;
+}
+.modal>img {
+	box-sizing: border-box;
+	border: 5px solid #fff;
+	border-radius: 3px;
+}
+.trigger{
+	cursor: pointer;
+}
+.trigger:active{
+	color: #ff1493;
+}
 
 /*--------------------*/
 /* RESPONSIVE STYLE */

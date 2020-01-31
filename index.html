@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name = "author" content = "IMS GHAZIABAD, UNIVERSITY COURSES CAMPUS" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MARKFEST-IMS Ghaziabad University Courses Campus</title>
+    <title>MARKFEST-2020-IMS Ghaziabad University Courses Campus</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.png"/>
     <!-- Font Awesome -->
@@ -297,6 +297,9 @@ other attractions along with LIVE RADIO & DJ, to maintain the effervescence of t
 									<p>Sumit Kumar<br>
 									(Coordinator) <br>9709407603
 									</p>
+									<p>Aditya Tyagi<br>
+									(Coordinator) <br>8445043297
+									</p>
 								</div>
 							</div>
 						</div>
@@ -309,8 +312,9 @@ other attractions along with LIVE RADIO & DJ, to maintain the effervescence of t
 	</main>
 	
 	<!-- End main content -->	
-			
-			
+	<div class="modal">
+        <img src="./assets/fonts/ewl-team.jpg" alt="Ashwin - EWL team member">
+    </div>		
 	<!-- Start footer -->
 	<footer id="mu-footer" role="contentinfo">
 			<div class="container">
@@ -322,13 +326,11 @@ other attractions along with LIVE RADIO & DJ, to maintain the effervescence of t
                             <a href="https://www.instagram.com/imsgzbuccampus" class="fa fa-instagram"></a>
                             <a href="https://www.linkedin.com/in/imsghaziabadadhyatmicnagar/" class="fa fa-linkedin"></a>
                             <a href="https://www.youtube.com/user/imsadhyatmicnagar" class="fa fa-youtube-play"></a>
- 
-                     
  						</div>
 					</div>
 					<div class="mu-footer-bottom">
 						<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://www.imsuc.ac.in">IMS Ghaziabad University Courses Campus</a>. All right reserved.</p>     
-                        <p class="mu-copy-right">Developed by- <strong>IMSUC EWL <a class="image-link" href="./assets/fonts/ewl-team.jpg">Team</a></strong> </p>
+                        <p class="mu-copy-right">Developed by- <strong class="trig">IMSUC EWL <span class="trigger">Team</span></strong> </p>
 					</div>
 				</div>
 			</div>
@@ -336,7 +338,6 @@ other attractions along with LIVE RADIO & DJ, to maintain the effervescence of t
 	</footer>
 	<!-- End footer -->
 
-	
 	
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -358,4 +359,16 @@ other attractions along with LIVE RADIO & DJ, to maintain the effervescence of t
 		easing: 'ease-out-back',
 		duration:1000
 	});
+	$('.trigger').click(function () {
+                    $('.modal').css({
+                        'transform': 'scale(1, 1)'
+                    })
+
+                    setTimeout(() => {
+                        $('.modal').css({
+                            'transform': 'scale(0, 1)'
+                        })
+                    }, 3000);
+
+            })
 </script>
